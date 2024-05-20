@@ -3,7 +3,11 @@
         "outDir": "dist/js",
         "target": "ES6",
         "noEmitOnError": true,
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        
+        //Aqui abaixo eu adicionei para testar
+        "strict": true,
+        "strictNullChecks": false
     },
     "include": ["app/**/*"]
 }

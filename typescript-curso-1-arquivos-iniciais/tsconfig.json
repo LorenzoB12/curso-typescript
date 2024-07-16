@@ -4,10 +4,11 @@
         "target": "ES6",
         "noEmitOnError": true,
         "noImplicitAny": true,
-        
+        "removeComments": true,
+
         //Aqui abaixo eu adicionei para testar
         "strict": true,
-        "strictNullChecks": false
+        "strictNullChecks": true
     },
     "include": ["app/**/*"]
 }

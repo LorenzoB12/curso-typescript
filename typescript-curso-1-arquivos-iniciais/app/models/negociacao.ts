@@ -12,4 +12,12 @@ export class Negociacao {
     get data(): Date {
         return new Date(this._data.getTime());
     }
+
+    public static criaDe = (dataStr: string, quantidadeStr: string, valorStr: string): Negociacao => {
+        return new Negociacao(
+            new Date(dataStr.replace(/-/g, ",")),
+            parseInt(quantidadeStr),
+            parseFloat(valorStr)
+        );
+    }
 }

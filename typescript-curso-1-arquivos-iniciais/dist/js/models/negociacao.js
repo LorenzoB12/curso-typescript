@@ -11,3 +11,6 @@ export class Negociacao {
         return new Date(this._data.getTime());
     }
 }
+Negociacao.criaDe = (dataStr, quantidadeStr, valorStr) => {
+    return new Negociacao(new Date(dataStr.replace(/-/g, ",")), parseInt(quantidadeStr), parseFloat(valorStr));
+};

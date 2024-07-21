@@ -10,7 +10,20 @@ export class Negociacao {
     get data() {
         return new Date(this._data.getTime());
     }
+    paraTexto() {
+        return `
+            Data: ${this.data}
+            Quantidade: ${this.quantidade}
+            Valor: ${this.valor}
+        `;
+    }
+    ehIgual(negociacao) {
+        return this.data.getDate() === negociacao.data.getDate()
+            && this.data.getMonth() === negociacao.data.getMonth()
+            && this.data.getFullYear() === negociacao.data.getFullYear();
+    }
 }
 Negociacao.criaDe = (dataStr, quantidadeStr, valorStr) => {
     return new Negociacao(new Date(dataStr.replace(/-/g, ",")), parseInt(quantidadeStr), parseFloat(valorStr));
 };
+//# sourceMappingURL=negociacao.js.map

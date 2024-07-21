@@ -5,10 +5,12 @@
         "noEmitOnError": true,
         "noImplicitAny": true,
         "removeComments": true,
+        "strictNullChecks": true,
+        "experimentalDecorators": true,
 
-        //Aqui abaixo eu adicionei para testar
-        "strict": true,
-        "strictNullChecks": true
+        "strict": false,
+        "useDefineForClassFields": false,
+        "sourceMap": true
     },
     "include": ["app/**/*"]
 }
